@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="uz">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Temurbek Ganiyev | Data Analyst Portfolio</title>
-  <meta name="description" content="Data Analyst portfolio for Temurbek Ganiyev: Google Sheets automation, Power BI, SQL, API-based product monitoring, e-commerce analytics.">
+  <title>Temurbek Ganiyev | Ma'lumotlar tahlilchisi ishlar to'plami</title>
+  <meta name="description" content="Temurbek Ganiyev ishlar to'plami: Google Sheets avtomatlashtirish, Power BI, SQL, API asosidagi mahsulot monitoringi va elektron savdo tahlili.">
   <style>
     :root {
       --ink: #111827;
@@ -20,7 +20,7 @@
       --green-soft: #e7f5ef;
       --blue-soft: #e8f0f8;
       --amber-soft: #fff4dc;
-      --shadow: 0 18px 50px rgba(17, 24, 39, 0.12);
+      --shadow: 0 16px 42px rgba(17, 24, 39, 0.10);
     }
 
     * {
@@ -53,7 +53,7 @@
     .site {
       min-height: 100vh;
       background:
-        linear-gradient(180deg, #f8fafc 0%, #edf2f7 42%, #e9eef5 100%);
+        linear-gradient(180deg, #fbfcfe 0%, #f1f5f9 44%, #e9eef5 100%);
     }
 
     .nav {
@@ -172,16 +172,49 @@
       letter-spacing: 0;
     }
 
+    .profile-strip {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .profile-photo {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 22%;
+      border: 4px solid #ffffff;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+      background: #ffffff;
+    }
+
+    .profile-name {
+      margin: 0;
+      color: #0b2545;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .profile-role {
+      margin: 5px 0 0;
+      color: #526174;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
     h1 {
       margin: 0;
       color: #0b2545;
-      font-size: clamp(38px, 6vw, 72px);
-      line-height: 0.96;
+      font-size: clamp(36px, 5vw, 60px);
+      line-height: 1.02;
       letter-spacing: 0;
     }
 
     .role-line {
-      margin: 18px 0 0;
+      margin: 16px 0 0;
       color: var(--blue);
       font-size: clamp(18px, 2.2vw, 25px);
       line-height: 1.25;
@@ -192,7 +225,7 @@
       margin: 20px 0 0;
       max-width: 650px;
       color: #334155;
-      font-size: 17px;
+      font-size: 16px;
     }
 
     .hero-actions {
@@ -259,7 +292,7 @@
     .card-top {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       gap: 16px;
       padding: 15px 18px;
       border-bottom: 1px solid var(--line);
@@ -377,7 +410,7 @@
     .metric strong {
       display: block;
       color: var(--teal-2);
-      font-size: 31px;
+      font-size: 28px;
       line-height: 1;
       margin-bottom: 10px;
     }
@@ -398,7 +431,7 @@
       border: 1px solid var(--line);
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 14px 32px rgba(17, 24, 39, 0.08);
+      box-shadow: 0 12px 30px rgba(17, 24, 39, 0.07);
     }
 
     .case-grid {
@@ -705,20 +738,20 @@
   <div class="site">
     <nav class="nav" aria-label="Main navigation">
       <div class="nav-inner">
-        <a class="brand" href="#top" aria-label="Temurbek Ganiyev portfolio home">
+        <a class="brand" href="#top" aria-label="Temurbek Ganiyev ishlar to'plami bosh sahifasi">
           <span class="mark">TG</span>
           <span>Temurbek Ganiyev</span>
         </a>
         <div class="nav-links">
-          <a href="#case-study">Case Study</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+          <a href="#case-study">Loyiha</a>
+          <a href="#skills">Ko'nikmalar</a>
+          <a href="#experience">Tajriba</a>
+          <a href="#contact">Aloqa</a>
         </div>
         <div class="lang-switch" aria-label="Language switcher">
-          <button type="button" class="active" data-lang="en">EN</button>
+          <button type="button" data-lang="en">EN</button>
           <button type="button" data-lang="ru">RU</button>
-          <button type="button" data-lang="uz">UZ</button>
+          <button type="button" class="active" data-lang="uz">UZ</button>
         </div>
       </div>
     </nav>
@@ -727,18 +760,26 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div>
-            <p class="eyebrow"><span class="dot"></span>Available for Data Analyst roles</p>
-            <h1>Data analyst who builds business systems, not just reports.</h1>
-            <p class="role-line">Google Sheets Automation | Power BI | SQL | E-commerce & Procurement Analytics</p>
+            <div class="profile-strip">
+              <img class="profile-photo" src="temurbek-ganiyev-photo.jpg" alt="Temurbek Ganiyev rasmi">
+              <div>
+                <p class="profile-name">Temurbek Ganiyev</p>
+                <p class="profile-role">Ma'lumotlar tahlilchisi</p>
+              </div>
+            </div>
+            <p class="eyebrow"><span class="dot"></span>Ma'lumotlar tahlilchisi ishlar to'plami</p>
+            <h1>Elektron savdo, xarid va ish jarayonlari uchun ma'lumotlar tahlili.</h1>
+            <p class="role-line">Google Sheets avtomatlashtirish | Power BI | SQL | Elektron savdo va xarid tahlili</p>
             <p class="lead">
-              I turn product, price, sales, stock, and procurement data into practical dashboards and decision systems.
-              My strongest portfolio example is an API-based unit economics model inspired by a real 3,000+ SKU monitoring workflow.
+              Men mahsulot natijalari, narx, qoldiq va birlik iqtisodiyoti bo'yicha tartibli boshqaruv panellari
+              hamda hisobot modellarini yarataman. Ishlar to'plamida 3,000+ mahsulot monitoringi jarayoni asosida,
+              maxfiy ma'lumotlarsiz tayyorlangan demo loyiha mavjud.
             </p>
             <div class="hero-actions">
-              <a class="btn" href="https://docs.google.com/spreadsheets/d/1F2jqLd45cMXCDiNSC_9PG5Q3wrV71_YWbYcxoqvzP3M/edit" target="_blank" rel="noopener">View Portfolio Demo</a>
-              <a class="btn secondary" href="Temurbek_Ganiyev_Data_Analyst_Resume_EN.docx">Download English Resume</a>
-              <a class="btn secondary" href="Temurbek_Ganiyev_Data_Analyst_Resume_RU.docx">Download Russian Resume</a>
-              <a class="btn secondary" href="Temurbek_Ganiyev_Data_Analyst_Resume_UZ.docx">Download Uzbek Resume</a>
+              <a class="btn" href="https://docs.google.com/spreadsheets/d/1F2jqLd45cMXCDiNSC_9PG5Q3wrV71_YWbYcxoqvzP3M/edit" target="_blank" rel="noopener">Demo loyihani ochish</a>
+              <a class="btn secondary" href="Temurbek_Ganiyev_Data_Analyst_Resume_EN.pdf">Inglizcha PDF rezyume</a>
+              <a class="btn secondary" href="Temurbek_Ganiyev_Data_Analyst_Resume_RU.pdf">Ruscha PDF rezyume</a>
+              <a class="btn secondary" href="Temurbek_Ganiyev_Data_Analyst_Resume_UZ.pdf">O'zbekcha PDF rezyume</a>
             </div>
             <div class="contact-row">
               <span class="contact-pill">Tashkent, Uzbekistan</span>
@@ -747,16 +788,15 @@
             </div>
           </div>
 
-          <aside class="hero-card" aria-label="Portfolio demo preview">
+          <aside class="hero-card" aria-label="Demo loyiha ko'rinishi">
             <div class="card-top">
-              <p class="card-title">API Unit Economics Dashboard</p>
-              <span class="status"><span class="dot"></span>No Apps Script</span>
+              <p class="card-title">API asosidagi birlik iqtisodiyoti paneli</p>
             </div>
-            <img src="portfolio-dashboard-preview.png" alt="Dashboard preview with unit economics metrics and top SKU contribution table">
+            <img src="portfolio-dashboard-preview.png" alt="Birlik iqtisodiyoti ko'rsatkichlari va mahsulotlar jadvali ko'rinishi">
             <div class="card-foot">
-              <div class="mini-stat"><strong>120</strong><span>Demo SKUs</span></div>
-              <div class="mini-stat"><strong>3,000+</strong><span>Real workflow scale</span></div>
-              <div class="mini-stat"><strong>0</strong><span>Confidential records</span></div>
+              <div class="mini-stat"><strong>120</strong><span>Demo mahsulot</span></div>
+              <div class="mini-stat"><strong>3,000+</strong><span>Asl jarayon hajmi</span></div>
+              <div class="mini-stat"><strong>0</strong><span>Maxfiy yozuv</span></div>
             </div>
           </aside>
         </div>
@@ -767,23 +807,23 @@
           <div class="metric-grid">
             <div class="metric">
               <strong>API</strong>
-              <span>Real-time product monitoring</span>
-              <p>Sales quantity, impressions, live prices, and stock balances.</p>
+              <span>Mahsulot monitoringi</span>
+              <p>Sales quantity, impressions, current prices, and stock balances.</p>
             </div>
             <div class="metric">
               <strong>BI</strong>
-              <span>Dashboards and reporting</span>
-              <p>Google Sheets, Power BI, SQL, and structured business tables.</p>
+              <span>Boshqaruv panellari va hisobotlar</span>
+              <p>Google Sheets, Power BI, SQL va tartibli biznes jadvallar.</p>
             </div>
             <div class="metric">
               <strong>SKU</strong>
-              <span>Product-level analytics</span>
-              <p>Unit economics, margin, ROI, ABC, XYZ, and risk signals.</p>
+              <span>Mahsulot darajasidagi tahlil</span>
+              <p>Birlik iqtisodiyoti, marja, ROI, ABC, XYZ va xavf belgilari.</p>
             </div>
             <div class="metric">
               <strong>Ops</strong>
-              <span>Business systematization</span>
-              <p>Sourcing, niche discovery, procurement, and process control.</p>
+              <span>Ish jarayonlari</span>
+              <p>Xarid, istiqbolli yo'nalishlarni o'rganish, davlat xaridlari va jarayon nazorati.</p>
             </div>
           </div>
         </div>
@@ -793,41 +833,38 @@
         <div class="wrap">
           <div class="section-head">
             <div>
-              <p class="section-kicker">Featured case study</p>
-              <h2>Portfolio-safe unit economics system</h2>
+              <p class="section-kicker">Asosiy loyiha</p>
+              <h2>Maxfiy ma'lumotlarsiz birlik iqtisodiyoti modeli</h2>
             </div>
-            <p class="section-note">A polished demo version that communicates the real system logic without exposing company data.</p>
+            <p class="section-note">Suhbat va ishlar to'plami uchun sun'iy ma'lumotlar asosida qayta qurilgan model tuzilmasi.</p>
           </div>
 
           <article class="case">
             <div class="case-grid">
               <div class="case-copy">
-                <h3>API Unit Economics Dashboard</h3>
+                <h3>API asosidagi birlik iqtisodiyoti paneli</h3>
                 <p>
-                  The demo shows how product data can be turned into a live operating dashboard:
-                  sales, impressions, current price, stock, cost, commission, logistics, advertising, profit, margin, ROI, ABC, XYZ, and status.
+                  Demo mahsulot ma'lumotlarini ishchi boshqaruv paneliga qanday tartiblash mumkinligini ko'rsatadi:
+                  sotuvlar, namoyishlar, real narx, qoldiq, tannarx, komissiya, logistika, reklama, foyda, marja, ROI, ABC, XYZ va holat.
                 </p>
                 <ul class="case-list">
-                  <li><span class="check">✓</span><span>Built for portfolio and interview use with synthetic SKUs, prices, suppliers, and sales data.</span></li>
-                  <li><span class="check">✓</span><span>Uses formulas and sheet structure only. No Apps Script, no API keys, no hidden company data.</span></li>
-                  <li><span class="check">✓</span><span>Demonstrates analytical thinking across e-commerce, sourcing, profitability, and operational control.</span></li>
+                  <li><span class="check">✓</span><span>Sun'iy mahsulot kodi, narx, yetkazib beruvchi, sotuv, namoyish va qoldiq ma'lumotlari ishlatilgan.</span></li>
+                  <li><span class="check">✓</span><span>Faqat formulalar va jadval tuzilmasi bilan ishlaydi, API kaliti yoki yashirin kompaniya ma'lumotlari yo'q.</span></li>
+                  <li><span class="check">✓</span><span>Elektron savdo va xarid ma'lumotlari narx, foydalilik va ish jarayonlariga oid qarorlarni qanday qo'llab-quvvatlashini ko'rsatadi.</span></li>
                 </ul>
                 <div class="stack-row">
                   <span class="tag">Google Sheets</span>
-                  <span class="tag">Unit Economics</span>
-                  <span class="tag">API Logic</span>
-                  <span class="tag">E-commerce Analytics</span>
-                  <span class="tag">Portfolio Demo</span>
-                </div>
-                <div class="confidential">
-                  Interview-safe: real company data is not shown. The demo is anonymized and intentionally built for sharing.
+                  <span class="tag">Birlik iqtisodiyoti</span>
+                  <span class="tag">API mantiqi</span>
+                  <span class="tag">Elektron savdo tahlili</span>
+                  <span class="tag">Demo loyiha</span>
                 </div>
                 <div class="hero-actions">
-                  <a class="btn" href="https://docs.google.com/spreadsheets/d/1F2jqLd45cMXCDiNSC_9PG5Q3wrV71_YWbYcxoqvzP3M/edit" target="_blank" rel="noopener">Open Google Sheet</a>
+                  <a class="btn" href="https://docs.google.com/spreadsheets/d/1F2jqLd45cMXCDiNSC_9PG5Q3wrV71_YWbYcxoqvzP3M/edit" target="_blank" rel="noopener">Google jadvalni ochish</a>
                 </div>
               </div>
               <div class="case-image">
-                <img src="portfolio-unit-economics-preview.png" alt="Unit economics table preview with SKU profitability, margin, ROI and status columns">
+                <img src="portfolio-unit-economics-preview.png" alt="Mahsulot foydaliligi, marja, ROI va holat ustunlari ko'rinishi">
               </div>
             </div>
           </article>
@@ -838,38 +875,38 @@
         <div class="wrap">
           <div class="section-head">
             <div>
-              <p class="section-kicker">Skill stack</p>
-              <h2>Tools and analytical strengths</h2>
+              <p class="section-kicker">Ko'nikmalar</p>
+              <h2>Vositalar va analitik yo'nalishlar</h2>
             </div>
-            <p class="section-note">Balanced between technical analytics and practical business execution.</p>
+            <p class="section-note">Amaliy hisobotlar, jadvallarni avtomatlashtirish va mahsulot darajasidagi biznes tahliliga fokus.</p>
           </div>
 
           <div class="skills-grid">
             <article class="skill-card">
-              <h3>Data & Reporting</h3>
+              <h3>Ma'lumot va hisobot</h3>
               <ul>
-                <li>Advanced Google Sheets</li>
-                <li>Power BI dashboards</li>
-                <li>Intermediate SQL</li>
-                <li>Excel and structured reports</li>
+                <li>Kuchli Google Sheets ko'nikmasi</li>
+                <li>Power BI boshqaruv panellari</li>
+                <li>SQL o'rta daraja</li>
+                <li>Excel va tartibli hisobotlar</li>
               </ul>
             </article>
             <article class="skill-card">
-              <h3>Automation & Systems</h3>
+              <h3>Avtomatlashtirish va tizimlar</h3>
               <ul>
-                <li>API-based data flows</li>
-                <li>Apps Script experience</li>
-                <li>Telegram bot workflows</li>
-                <li>AI-assisted operations</li>
+                <li>API asosidagi ma'lumot oqimlari</li>
+                <li>Jadval avtomatlashtirish tajribasi</li>
+                <li>Telegram bot jarayonlari</li>
+                <li>Sun'iy intellekt yordamida ish jarayonlarini tezlashtirish</li>
               </ul>
             </article>
             <article class="skill-card">
-              <h3>Business Analytics</h3>
+              <h3>Biznes tahlil</h3>
               <ul>
-                <li>Unit economics</li>
-                <li>Pricing strategy</li>
-                <li>ABC and XYZ analysis</li>
-                <li>Product sourcing insights</li>
+                <li>Birlik iqtisodiyoti</li>
+                <li>Narx strategiyasi</li>
+                <li>ABC va XYZ tahlili</li>
+                <li>Istiqbolli mahsulotlarni topish</li>
               </ul>
             </article>
           </div>
@@ -880,32 +917,32 @@
         <div class="wrap">
           <div class="section-head">
             <div>
-              <p class="section-kicker">Experience</p>
-              <h2>Where analytics meets business operations</h2>
+              <p class="section-kicker">Tajriba</p>
+              <h2>Mos tajriba</h2>
             </div>
           </div>
 
           <div class="timeline">
             <article class="role-card">
               <div>
-                <h3>General Data Analyst / Business Systems Analyst</h3>
-                <div class="role-meta">E-commerce and operations</div>
+                <h3>Umumiy ma'lumotlar tahlilchisi / biznes tizimlari tahlilchisi</h3>
+                <div class="role-meta">Elektron savdo va ish jarayonlari</div>
               </div>
               <ul>
-                <li>Performed three core business functions: product sourcing from China, finding high-potential products, and systematizing company workflows.</li>
-                <li>Built a real-time API-key based monitoring system for 3,000+ products across sales, impressions, prices, and stock balances.</li>
-                <li>Designed Google Sheets analytical models for pricing, profitability, product tracking, purchasing, and daily operating control.</li>
+                <li>Uchta biznes yo'nalishda ishlaganman: Xitoydan tovar olib kelish, istiqbolli mahsulot topish va kompaniya ish jarayonlarini tizimlashtirish.</li>
+                <li>3,000+ mahsulot uchun API kaliti asosida monitoring tizimini qurganman: sotuvlar, namoyishlar, narxlar va qoldiqlar.</li>
+                <li>Narx, foydalilik, mahsulot kuzatuvi, xarid va kundalik nazorat uchun Google Sheets tahliliy modellar yaratganman.</li>
               </ul>
             </article>
             <article class="role-card">
               <div>
-                <h3>Public Procurement Broker</h3>
+                <h3>Davlat xaridlari bo'yicha broker</h3>
                 <div class="role-meta">X-PRIZE HORIZON LLC | 1 year</div>
               </div>
               <ul>
-                <li>Supported public procurement processes and broker-related operations across local procurement platforms.</li>
-                <li>Worked with commercial documentation, platform workflows, tax systems, and transaction execution.</li>
-                <li>Applied data analysis tools to improve visibility into pricing, product economics, and operational decisions.</li>
+                <li>Davlat xaridlari va brokerlik jarayonlari bilan mahalliy platformalarda ishlaganman.</li>
+                <li>Tijorat hujjatlari, platforma ish jarayonlari, soliq tizimlari va bitimlar bilan ishlaganman.</li>
+                <li>Narx, mahsulot iqtisodiyoti va ish jarayonlariga oid qarorlar uchun ma'lumotlar tahlili yondashuvini qo'llaganman.</li>
               </ul>
             </article>
           </div>
@@ -915,13 +952,13 @@
       <section class="wrap" id="contact">
         <div class="cta">
           <div>
-            <h2>Ready to discuss a Data Analyst role</h2>
-            <p>Best fit: e-commerce analytics, business analytics, procurement analytics, reporting automation, and product profitability dashboards.</p>
+            <h2>Ma'lumotlar tahlilchisi lavozimlari uchun ochiqman</h2>
+            <p>Mos yo'nalishlar: elektron savdo tahlili, biznes tahlil, xarid tahlili, hisobotlarni avtomatlashtirish va mahsulot foydaliligi boshqaruv panellari.</p>
           </div>
           <details class="contact-toggle">
-            <summary class="btn">Contact Me</summary>
+            <summary class="btn">Bog'lanish</summary>
             <div class="contact-card">
-              <div class="contact-label">Phone</div>
+              <div class="contact-label">Telefon</div>
               <a href="tel:+998951406965">+998 95 140 69 65</a>
               <div class="contact-label">Telegram</div>
               <a href="https://t.me/tba_1230" target="_blank" rel="noopener">@tba_1230</a>
@@ -933,7 +970,7 @@
 
     <footer>
       <div class="wrap">
-        Static portfolio website. Works offline as a local HTML file. Google Sheet and email links need internet access.
+        Created by Timur Ganiyev
       </div>
     </footer>
   </div>
@@ -941,49 +978,49 @@
     const copy = {
       en: {
         nav: ["Case Study", "Skills", "Experience", "Contact"],
-        eyebrow: "Available for Data Analyst roles",
-        h1: "Data analyst who builds business systems, not just reports.",
+        eyebrow: "Data Analyst Portfolio",
+        h1: "Data analytics for e-commerce, procurement, and operations.",
         role: "Google Sheets Automation | Power BI | SQL | E-commerce & Procurement Analytics",
-        lead: "I turn product, price, sales, stock, and procurement data into practical dashboards and decision systems. My strongest portfolio example is an API-based unit economics model inspired by a real 3,000+ SKU monitoring workflow.",
+        lead: "I build structured dashboards and reporting models for product performance, pricing, inventory, and unit economics. My portfolio includes an anonymized demo based on a real workflow for monitoring 3,000+ SKUs through API-driven data.",
         demoBtn: "View Portfolio Demo",
-        resumeEn: "Download English Resume",
-        resumeRu: "Download Russian Resume",
-        resumeUz: "Download Uzbek Resume",
+        resumeEn: "Download English PDF Resume",
+        resumeRu: "Download Russian PDF Resume",
+        resumeUz: "Download Uzbek PDF Resume",
         cardTitle: "API Unit Economics Dashboard",
         noScript: "No Apps Script",
-        mini: ["Demo SKUs", "Real workflow scale", "Confidential records"],
+        mini: ["Demo SKUs", "Original workflow scale", "Confidential records"],
         metrics: [
-          ["API", "Real-time product monitoring", "Sales quantity, impressions, live prices, and stock balances."],
+          ["API", "Product monitoring", "Sales quantity, impressions, current prices, and stock balances."],
           ["BI", "Dashboards and reporting", "Google Sheets, Power BI, SQL, and structured business tables."],
-          ["SKU", "Product-level analytics", "Unit economics, margin, ROI, ABC, XYZ, and risk signals."],
-          ["Ops", "Business systematization", "Sourcing, niche discovery, procurement, and process control."]
+          ["SKU", "SKU-level analysis", "Unit economics, margin, ROI, ABC, XYZ, and risk signals."],
+          ["Ops", "Business operations", "Sourcing support, niche research, procurement, and workflow control."]
         ],
         caseKicker: "Featured case study",
-        caseTitle: "Portfolio-safe unit economics system",
-        caseNote: "A polished demo version that communicates the real system logic without exposing company data.",
+        caseTitle: "Unit economics model with anonymized data",
+        caseNote: "A shareable version of the model structure, rebuilt with synthetic data for interviews and portfolio use.",
         caseH3: "API Unit Economics Dashboard",
-        caseP: "The demo shows how product data can be turned into a live operating dashboard: sales, impressions, current price, stock, cost, commission, logistics, advertising, profit, margin, ROI, ABC, XYZ, and status.",
+        caseP: "The demo shows how product data can be organized into an operating dashboard: sales, impressions, current price, stock, cost, commission, logistics, advertising, profit, margin, ROI, ABC, XYZ, and status.",
         checks: [
-          "Built for portfolio and interview use with synthetic SKUs, prices, suppliers, and sales data.",
-          "Uses formulas and sheet structure only. No Apps Script, no API keys, no hidden company data.",
-          "Demonstrates analytical thinking across e-commerce, sourcing, profitability, and operational control."
+          "Uses synthetic SKUs, prices, suppliers, sales, impressions, and stock data.",
+          "Works with formulas and spreadsheet structure only. No Apps Script, API keys, or hidden company data.",
+          "Shows how e-commerce and procurement data can support pricing, profitability, and operating decisions."
         ],
-        confidential: "Interview-safe: real company data is not shown. The demo is anonymized and intentionally built for sharing.",
+        confidential: "Interview-safe: the demo is anonymized and contains no real company records.",
         openSheet: "Open Google Sheet",
         skillsKicker: "Skill stack",
-        skillsTitle: "Tools and analytical strengths",
-        skillsNote: "Balanced between technical analytics and practical business execution.",
+        skillsTitle: "Tools and analytical focus",
+        skillsNote: "Focused on practical reporting, spreadsheet automation, and product-level business analysis.",
         skillCards: [
           ["Data & Reporting", ["Advanced Google Sheets", "Power BI dashboards", "Intermediate SQL", "Excel and structured reports"]],
           ["Automation & Systems", ["API-based data flows", "Apps Script experience", "Telegram bot workflows", "AI-assisted operations"]],
           ["Business Analytics", ["Unit economics", "Pricing strategy", "ABC and XYZ analysis", "Product sourcing insights"]]
         ],
         expKicker: "Experience",
-        expTitle: "Where analytics meets business operations",
+        expTitle: "Relevant experience",
         roles: [
           ["General Data Analyst / Business Systems Analyst", "E-commerce and operations", [
-            "Performed three core business functions: product sourcing from China, finding high-potential products, and systematizing company workflows.",
-            "Built a real-time API-key based monitoring system for 3,000+ products across sales, impressions, prices, and stock balances.",
+            "Worked across three business areas: product sourcing from China, high-potential product research, and workflow systematization.",
+            "Built an API-key based monitoring system for 3,000+ products across sales, impressions, prices, and stock balances.",
             "Designed Google Sheets analytical models for pricing, profitability, product tracking, purchasing, and daily operating control."
           ]],
           ["Public Procurement Broker", "X-PRIZE HORIZON LLC | 1 year", [
@@ -992,56 +1029,56 @@
             "Applied data analysis tools to improve visibility into pricing, product economics, and operational decisions."
           ]]
         ],
-        ctaTitle: "Ready to discuss a Data Analyst role",
-        ctaP: "Best fit: e-commerce analytics, business analytics, procurement analytics, reporting automation, and product profitability dashboards.",
+        ctaTitle: "Open to Data Analyst opportunities",
+        ctaP: "Relevant roles: e-commerce analytics, business analytics, procurement analytics, reporting automation, and product profitability dashboards.",
         contact: "Contact Me",
-        footer: "Static portfolio website. Works offline as a local HTML file. Google Sheet and email links need internet access."
+        footer: "Created by Timur Ganiyev"
       },
       ru: {
         nav: ["Кейс", "Навыки", "Опыт", "Контакты"],
-        eyebrow: "Открыт к позициям Data Analyst",
-        h1: "Data analyst, который строит бизнес-системы, а не только отчеты.",
+        eyebrow: "Data Analyst Portfolio",
+        h1: "Аналитика данных для e-commerce, закупок и операционных процессов.",
         role: "Google Sheets Automation | Power BI | SQL | E-commerce & Procurement Analytics",
-        lead: "Я превращаю данные по товарам, ценам, продажам, остаткам и закупкам в практичные дашборды и системы принятия решений. Главный пример в портфолио - API-based модель unit economics, основанная на реальном workflow мониторинга 3,000+ SKU.",
+        lead: "Я создаю структурированные dashboard и модели отчетности для анализа товаров, цен, остатков и unit economics. В портфолио есть обезличенная демо-версия, основанная на реальном workflow мониторинга 3,000+ SKU через API-driven data.",
         demoBtn: "Открыть демо портфолио",
         resumeEn: "Скачать резюме EN",
         resumeRu: "Скачать резюме RU",
         resumeUz: "Скачать резюме UZ",
         cardTitle: "API Unit Economics Dashboard",
         noScript: "Без Apps Script",
-        mini: ["Демо SKU", "Масштаб реального workflow", "Конфиденциальных записей"],
+        mini: ["Демо SKU", "Масштаб исходного workflow", "Конфиденциальных записей"],
         metrics: [
-          ["API", "Real-time мониторинг товаров", "Продажи, показы, актуальные цены и остатки."],
+          ["API", "Мониторинг товаров", "Продажи, показы, актуальные цены и остатки."],
           ["BI", "Дашборды и отчетность", "Google Sheets, Power BI, SQL и структурированные бизнес-таблицы."],
-          ["SKU", "Аналитика по товарам", "Unit economics, маржа, ROI, ABC, XYZ и risk signals."],
-          ["Ops", "Систематизация бизнеса", "Закуп, поиск ниш, procurement и контроль процессов."]
+          ["SKU", "Аналитика на уровне SKU", "Unit economics, маржа, ROI, ABC, XYZ и risk signals."],
+          ["Ops", "Операционные процессы", "Закуп, поиск ниш, procurement и контроль workflow."]
         ],
         caseKicker: "Главный кейс",
-        caseTitle: "Unit economics система, безопасная для портфолио",
-        caseNote: "Демо-версия показывает логику реальной системы без раскрытия данных компании.",
+        caseTitle: "Unit economics модель с обезличенными данными",
+        caseNote: "Версия структуры модели, пересобранная на синтетических данных для портфолио и интервью.",
         caseH3: "API Unit Economics Dashboard",
-        caseP: "Демо показывает, как товарные данные превращаются в рабочий dashboard: продажи, показы, текущая цена, остаток, себестоимость, комиссия, логистика, реклама, прибыль, маржа, ROI, ABC, XYZ и статус.",
+        caseP: "Демо показывает, как товарные данные можно организовать в рабочий dashboard: продажи, показы, текущая цена, остаток, себестоимость, комиссия, логистика, реклама, прибыль, маржа, ROI, ABC, XYZ и статус.",
         checks: [
-          "Создано для портфолио и интервью на синтетических SKU, ценах, поставщиках и продажах.",
-          "Используются только формулы и структура таблиц. Нет Apps Script, API keys или скрытых данных компании.",
-          "Показывает аналитическое мышление в e-commerce, закупе, прибыльности и операционном контроле."
+          "Используются синтетические SKU, цены, поставщики, продажи, показы и остатки.",
+          "Работает на формулах и структуре таблиц. Нет Apps Script, API keys или скрытых данных компании.",
+          "Показывает, как e-commerce и procurement data могут поддерживать pricing, profitability и операционные решения."
         ],
-        confidential: "Безопасно для интервью: реальные данные компании не показываются. Демо обезличено и сделано для демонстрации.",
+        confidential: "Безопасно для интервью: демо обезличено и не содержит реальных записей компании.",
         openSheet: "Открыть Google Sheet",
         skillsKicker: "Стек навыков",
-        skillsTitle: "Инструменты и аналитические сильные стороны",
-        skillsNote: "Баланс технической аналитики и практического бизнес-исполнения.",
+        skillsTitle: "Инструменты и аналитический фокус",
+        skillsNote: "Фокус на практической отчетности, spreadsheet automation и product-level business analysis.",
         skillCards: [
           ["Data & Reporting", ["Продвинутый Google Sheets", "Power BI дашборды", "SQL средний уровень", "Excel и структурированные отчеты"]],
           ["Automation & Systems", ["API-based data flows", "Опыт Apps Script", "Telegram bot workflows", "AI-assisted operations"]],
           ["Business Analytics", ["Unit economics", "Pricing strategy", "ABC и XYZ анализ", "Поиск перспективных товаров"]]
         ],
         expKicker: "Опыт",
-        expTitle: "Где аналитика соединяется с бизнес-операциями",
+        expTitle: "Релевантный опыт",
         roles: [
           ["General Data Analyst / Business Systems Analyst", "E-commerce и операционные процессы", [
-            "Выполнял три ключевые бизнес-функции: закуп товаров из Китая, поиск перспективных товаров и систематизация workflow компании.",
-            "Построил real-time API-key систему мониторинга 3,000+ товаров: продажи, показы, цены и остатки.",
+            "Работал в трех бизнес-направлениях: закуп товаров из Китая, поиск перспективных товаров и систематизация workflow компании.",
+            "Построил API-key систему мониторинга 3,000+ товаров: продажи, показы, цены и остатки.",
             "Создавал Google Sheets аналитические модели для pricing, profitability, product tracking, закупок и ежедневного контроля."
           ]],
           ["Брокер по государственным закупкам", "X-PRIZE HORIZON LLC | 1 год", [
@@ -1050,68 +1087,66 @@
             "Применял data analysis для прозрачности цен, экономики товаров и операционных решений."
           ]]
         ],
-        ctaTitle: "Готов обсудить позицию Data Analyst",
-        ctaP: "Лучший fit: e-commerce analytics, business analytics, procurement analytics, reporting automation и product profitability dashboards.",
+        ctaTitle: "Открыт к возможностям Data Analyst",
+        ctaP: "Релевантные роли: e-commerce analytics, business analytics, procurement analytics, reporting automation и product profitability dashboards.",
         contact: "Связаться",
-        footer: "Static portfolio website. Работает offline как local HTML file. Для Google Sheet и email links нужен интернет."
+        footer: "Created by Timur Ganiyev"
       },
       uz: {
-        nav: ["Case study", "Ko'nikmalar", "Tajriba", "Kontakt"],
-        eyebrow: "Data Analyst rollari uchun ochiqman",
-        h1: "Faqat report emas, biznes tizim quradigan data analyst.",
-        role: "Google Sheets Automation | Power BI | SQL | E-commerce & Procurement Analytics",
-        lead: "Men mahsulot, narx, sotuv, qoldiq va xarid ma'lumotlarini amaliy dashboardlar va qaror qabul qilish tizimlariga aylantiraman. Portfolio'dagi eng kuchli namuna - 3,000+ SKU monitoring workflow asosida qurilgan API-based unit economics modeli.",
-        demoBtn: "Portfolio demosini ochish",
-        resumeEn: "Inglizcha resume",
-        resumeRu: "Ruscha resume",
-        resumeUz: "O'zbekcha resume",
-        cardTitle: "API Unit Economics Dashboard",
-        noScript: "Apps Script yo'q",
-        mini: ["Demo SKU", "Real workflow masshtabi", "Maxfiy yozuvlar"],
+        nav: ["Loyiha", "Ko'nikmalar", "Tajriba", "Aloqa"],
+        eyebrow: "Ma'lumotlar tahlilchisi ishlar to'plami",
+        h1: "Elektron savdo, xarid va ish jarayonlari uchun ma'lumotlar tahlili.",
+        role: "Google Sheets avtomatlashtirish | Power BI | SQL | Elektron savdo va xarid tahlili",
+        lead: "Men mahsulot natijalari, narx, qoldiq va birlik iqtisodiyoti bo'yicha tartibli boshqaruv panellari hamda hisobot modellarini yarataman. Ishlar to'plamida 3,000+ mahsulot monitoringi jarayoni asosida, maxfiy ma'lumotlarsiz tayyorlangan demo loyiha mavjud.",
+        demoBtn: "Demo loyihani ochish",
+        resumeEn: "Inglizcha PDF rezyume",
+        resumeRu: "Ruscha PDF rezyume",
+        resumeUz: "O'zbekcha PDF rezyume",
+        cardTitle: "API asosidagi birlik iqtisodiyoti paneli",
+        mini: ["Demo mahsulot", "Asl jarayon hajmi", "Maxfiy yozuv"],
         metrics: [
-          ["API", "Real-time mahsulot monitoring", "Sotuv soni, namoyishlar, real narxlar va qoldiqlar."],
-          ["BI", "Dashboard va hisobotlar", "Google Sheets, Power BI, SQL va strukturali biznes jadvallar."],
-          ["SKU", "Mahsulot darajasidagi analytics", "Unit economics, margin, ROI, ABC, XYZ va risk signallar."],
-          ["Ops", "Biznesni tizimlashtirish", "Zakup, niche topish, procurement va jarayonlarni nazorat qilish."]
+          ["API", "Mahsulot monitoringi", "Sotuv soni, namoyishlar, real narxlar va qoldiqlar."],
+          ["BI", "Boshqaruv panellari va hisobotlar", "Google Sheets, Power BI, SQL va tartibli biznes jadvallar."],
+          ["Mahsulot", "Mahsulot darajasidagi tahlil", "Birlik iqtisodiyoti, marja, ROI, ABC, XYZ va xavf belgilari."],
+          ["Ops", "Ish jarayonlari", "Xarid, istiqbolli yo'nalishlarni o'rganish, davlat xaridlari va jarayon nazorati."]
         ],
-        caseKicker: "Asosiy case study",
-        caseTitle: "Portfolio uchun xavfsiz unit economics tizimi",
-        caseNote: "Real tizim logikasini kompaniya ma'lumotlarini oshkor qilmasdan ko'rsatadigan demo versiya.",
-        caseH3: "API Unit Economics Dashboard",
-        caseP: "Demo mahsulot data'si qanday qilib ishchi dashboardga aylanishini ko'rsatadi: sotuvlar, namoyishlar, real narx, qoldiq, tannarx, komissiya, logistika, reklama, foyda, margin, ROI, ABC, XYZ va status.",
+        caseKicker: "Asosiy loyiha",
+        caseTitle: "Maxfiy ma'lumotlarsiz birlik iqtisodiyoti modeli",
+        caseNote: "Suhbat va ishlar to'plami uchun sun'iy ma'lumotlar asosida qayta qurilgan model tuzilmasi.",
+        caseH3: "API asosidagi birlik iqtisodiyoti paneli",
+        caseP: "Demo mahsulot ma'lumotlarini ishchi boshqaruv paneliga qanday tartiblash mumkinligini ko'rsatadi: sotuvlar, namoyishlar, real narx, qoldiq, tannarx, komissiya, logistika, reklama, foyda, marja, ROI, ABC, XYZ va holat.",
         checks: [
-          "Portfolio va intervyu uchun sun'iy SKU, narx, supplier va sotuv data bilan yaratilgan.",
-          "Faqat formulalar va sheet strukturasi ishlatilgan. Apps Script, API key yoki hidden kompaniya data yo'q.",
-          "E-commerce, zakup, profitability va operational control bo'yicha analitik fikrlashni ko'rsatadi."
+          "Sun'iy mahsulot kodi, narx, yetkazib beruvchi, sotuv, namoyish va qoldiq ma'lumotlari ishlatilgan.",
+          "Faqat formulalar va jadval tuzilmasi bilan ishlaydi, API kaliti yoki yashirin kompaniya ma'lumotlari yo'q.",
+          "Elektron savdo va xarid ma'lumotlari narx, foydalilik va ish jarayonlariga oid qarorlarni qanday qo'llab-quvvatlashini ko'rsatadi."
         ],
-        confidential: "Intervyu uchun xavfsiz: real kompaniya ma'lumotlari ko'rsatilmaydi. Demo anonymized va sharing uchun maxsus qilingan.",
-        openSheet: "Google Sheetni ochish",
-        skillsKicker: "Skill stack",
-        skillsTitle: "Toollar va analitik kuchli tomonlar",
-        skillsNote: "Texnik analytics va amaliy biznes ijrosining kombinatsiyasi.",
+        openSheet: "Google jadvalni ochish",
+        skillsKicker: "Ko'nikmalar",
+        skillsTitle: "Vositalar va analitik yo'nalishlar",
+        skillsNote: "Amaliy hisobotlar, jadvallarni avtomatlashtirish va mahsulot darajasidagi biznes tahliliga e'tibor qaratilgan.",
         skillCards: [
-          ["Data & Reporting", ["Advanced Google Sheets", "Power BI dashboardlar", "SQL o'rta daraja", "Excel va strukturali hisobotlar"]],
-          ["Automation & Systems", ["API-based data flows", "Apps Script tajribasi", "Telegram bot workflowlar", "AI-assisted operations"]],
-          ["Business Analytics", ["Unit economics", "Pricing strategy", "ABC va XYZ analysis", "Istiqbolli mahsulotlarni topish"]]
+          ["Ma'lumot va hisobot", ["Kuchli Google Sheets ko'nikmasi", "Power BI boshqaruv panellari", "SQL o'rta daraja", "Excel va tartibli hisobotlar"]],
+          ["Avtomatlashtirish va tizimlar", ["API asosidagi ma'lumot oqimlari", "Jadval avtomatlashtirish tajribasi", "Telegram bot jarayonlari", "Sun'iy intellekt yordamida ish jarayonlarini tezlashtirish"]],
+          ["Biznes tahlil", ["Birlik iqtisodiyoti", "Narx strategiyasi", "ABC va XYZ tahlili", "Istiqbolli mahsulotlarni topish"]]
         ],
         expKicker: "Tajriba",
-        expTitle: "Analytics biznes operatsiyalar bilan birlashgan joy",
+        expTitle: "Mos tajriba",
         roles: [
-          ["General Data Analyst / Business Systems Analyst", "E-commerce va operatsion jarayonlar", [
-            "Uchta asosiy biznes vazifani bajarganman: Xitoydan tovar olib kelish, istiqbolli mahsulot topish va kompaniya workflowlarini tizimlashtirish.",
-            "3,000+ mahsulot uchun real-time API-key monitoring tizimini qurganman: sotuvlar, namoyishlar, narxlar va qoldiqlar.",
-            "Pricing, profitability, product tracking, xarid va daily control uchun Google Sheets analitik modellar yaratganman."
+          ["Umumiy ma'lumotlar tahlilchisi / biznes tizimlari tahlilchisi", "Elektron savdo va ish jarayonlari", [
+            "Uchta biznes yo'nalishda ishlaganman: Xitoydan tovar olib kelish, istiqbolli mahsulot topish va kompaniya ish jarayonlarini tizimlashtirish.",
+            "3,000+ mahsulot uchun API kaliti asosida monitoring tizimini qurganman: sotuvlar, namoyishlar, narxlar va qoldiqlar.",
+            "Narx, foydalilik, mahsulot kuzatuvi, xarid va kundalik nazorat uchun Google Sheets tahliliy modellar yaratganman."
           ]],
           ["Davlat xaridlari bo'yicha broker", "X-PRIZE HORIZON LLC | 1 yil", [
-            "Davlat xaridlari va brokerlik operatsiyalarini lokal platformalarda qo'llab-quvvatlaganman.",
-            "Tijorat hujjatlari, platform workflowlari, soliq tizimlari va bitimlar bilan ishlaganman.",
-            "Narx, mahsulot iqtisodiyoti va operatsion qarorlar uchun data analysis yondashuvini qo'llaganman."
+            "Davlat xaridlari va brokerlik jarayonlari bilan mahalliy platformalarda ishlaganman.",
+            "Tijorat hujjatlari, platforma ish jarayonlari, soliq tizimlari va bitimlar bilan ishlaganman.",
+            "Narx, mahsulot iqtisodiyoti va ish jarayonlariga oid qarorlar uchun ma'lumotlar tahlili yondashuvini qo'llaganman."
           ]]
         ],
-        ctaTitle: "Data Analyst roli bo'yicha suhbatlashishga tayyorman",
-        ctaP: "Eng yaxshi yo'nalishlar: e-commerce analytics, business analytics, procurement analytics, reporting automation va product profitability dashboards.",
+        ctaTitle: "Ma'lumotlar tahlilchisi lavozimlari uchun ochiqman",
+        ctaP: "Mos yo'nalishlar: elektron savdo tahlili, biznes tahlil, xarid tahlili, hisobotlarni avtomatlashtirish va mahsulot foydaliligi boshqaruv panellari.",
         contact: "Bog'lanish",
-        footer: "Static portfolio website. Local HTML fayl sifatida offline ishlaydi. Google Sheet va email linklari uchun internet kerak."
+        footer: "Created by Timur Ganiyev"
       }
     };
 
@@ -1186,7 +1221,7 @@
     document.querySelectorAll(".lang-switch button").forEach((btn) => {
       btn.addEventListener("click", () => applyLang(btn.dataset.lang));
     });
-    applyLang(localStorage.getItem("portfolioLang") || "en");
+    applyLang("uz");
   </script>
 </body>
 </html>
